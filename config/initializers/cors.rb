@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "https://blog-zspf.onrender.com", "localhost:5173"
+    origins "https://blog-zspf.onrender.com", "localhost:5173", "https://vishblog.onrender.com/"
 
     resource "*",
       headers: :any,
